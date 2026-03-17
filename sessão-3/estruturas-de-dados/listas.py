@@ -19,8 +19,10 @@ print(numeros[2:]) # Imprimir tudo a partir do terceiro elemento
 print(numeros[:2]) # Imprimir tudo até ao segundo elemento
 
 
-for numero in numeros:
-    print(numero * 2)
+print("===========")
+
+# for numero in numeros:
+#     print(numero * 2)
 
 # Exercício (apenas utilizando fors e listas):
 # 1. Imprimir apenas os números maiores ou iguais a sete
@@ -28,5 +30,19 @@ for numero in numeros:
 # 3. Imprimir apenas os números ímpares
 
 def maiores_que_sete(numeros):
-    pass
+    for numero in numeros:
+        if numero >= 7:
+            print(numero)
 
+def media_numeros(numeros):
+    sum = 0
+    elements = 0
+    for numero in numeros:
+        elements += 1
+        sum += numero
+    print(sum / elements)
+
+def numeros_impares(numeros):
+    for numero in numeros:
+        if numero % 2 != 0:
+            print(numero)
