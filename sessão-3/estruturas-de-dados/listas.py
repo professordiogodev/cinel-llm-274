@@ -27,4 +27,6 @@ for numero in numeros:
 # 2. Imprimir a média de todos os números
 # 3. Imprimir apenas os números ímpares
 
+def maiores_que_sete(numeros):
+    pass
 
